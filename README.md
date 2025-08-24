@@ -20,6 +20,10 @@ This project demonstrates **Clean Architecture principles**, **separation of con
 ## 📱 Screenshots  
 1. UX when connected to Internet
 <img width="350" height="750" alt="Screenshot_20250824_191828" src="https://github.com/user-attachments/assets/1c36cd32-5f7e-40d8-b2f6-8608bb8186b5" />
+
+
+_______________________
+
 2. UX when not connected to Internet
 <img width="350" height="750" alt="Screenshot_20250824_191756" src="https://github.com/user-attachments/assets/cc2de768-f395-412a-954c-9323fa40b2e6" />
 
