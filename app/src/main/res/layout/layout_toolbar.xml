@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#04316A">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="16dp"
+        android:paddingEnd="12dp">
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/ivProfile"
+            android:src="@drawable/ic_profile"
+            android:tint="#fff"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <!-- Space between icon & text -->
+        <View
+            android:layout_width="8dp"
+            android:layout_height="0dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvToolbarTitle"
+            android:text="Portfolio"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            />
+
+        <!-- Spacer to push icons to right -->
+        <View
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="0dp" />
+
+        <!-- Sort Icon -->
+        <ImageView
+            android:id="@+id/ivSort"
+            android:src="@drawable/ic_sort"
+            android:tint="#fff"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+        <!-- Separator line (vertical) -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="#33FFFFFF" />
+
+        <!-- Search Icon -->
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:src="@drawable/ic_search"
+            android:tint="#fff"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+
+    </LinearLayout>
+</FrameLayout>

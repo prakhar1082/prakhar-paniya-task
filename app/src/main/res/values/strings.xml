@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Portfolio</string>
+    <string name="label_net_qty">NET QTY: </string>
+    <string name="label_pnl">P&amp;L: </string>
+    <string name="label_ltp">LTP: ₹%1$.2f</string>
+    <string name="formatted_amount">₹%1$.2f</string>
+    <string name="negative_sign">- %1$s</string>
+    <string name="currency_format">₹%.2f</string>
+    <string name="pnl_with_percentage">₹%.2f (%.2f%%)</string>
+    <string name="current_value">Current Value</string>
+    <string name="total_investment">Total Investment</string>
+    <string name="todays_pnl">Today\'s P&amp;L</string>
+    <string name="total_pnl">Total P&amp;L</string>
+    <string name="error_message">Something went wrong</string>
+    <string name="retry">Retry</string>
+    <string name="holding_symbol_sample">ASHOKLEY</string>
+    <string name="ltp_sample">LTP: ₹119.10</string>
+    <string name="net_qty_sample">NET QTY: 3</string>
+    <string name="pnl_sample">PL: ₹12.90</string>
+    <string name="summary_title">Profit &amp; Loss*</string>
+    <string name="sample_current_value">₹ 27,893.65</string>
+    <string name="sample_total_investment">₹ 28,590.71</string>
+    <string name="sample_todays_pnl">-₹235.65</string>
+    <string name="sample_total_pnl">-₹697.06 (2.44%)</string>
+    <string name="retry_again">"Oops! Please Retry"</string>
+
+</resources>

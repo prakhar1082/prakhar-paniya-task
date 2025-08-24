@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/summaryContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_summary_card"
+    android:paddingStart="4dp"
+    android:paddingEnd="4dp"
+    android:fitsSystemWindows="true"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:layout_margin="4dp"
+    android:elevation="2dp">
+
+    <!-- Expanded Detail Section -->
+    <LinearLayout
+        android:id="@+id/summaryDetail"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="4dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvCurrentValueLabel"
+                android:text="@string/current_value"
+                android:textColor="#444"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvCurrentValue"
+                tools:text="@string/sample_current_value"
+                android:textColor="#222"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/tvTotalInvestmentLabel"
+                android:text="@string/total_investment"
+                android:textColor="#444"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvTotalInvestment"
+                tools:text="@string/sample_total_investment"
+                android:textColor="#222"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTodaysPNLLabel"
+                android:text="@string/todays_pnl"
+                android:textColor="#444"
+                android:textSize="16sp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/tvTodaysPNL"
+                tools:text="@string/sample_todays_pnl"
+                android:textColor="#D0021B"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:id="@+id/summaryDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="invisible"
+        />
+
+    <!-- Header Row -->
+    <LinearLayout
+        android:id="@+id/summaryHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true"
+        android:layout_marginBottom="4dp"
+        android:focusable="true"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:background="?android:attr/selectableItemBackground">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvSummaryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/summary_title"
+            android:textColor="#232323"
+            android:textSize="20sp" />
+
+        <!-- Arrow -->
+        <ImageView
+            android:id="@+id/ivArrow"
+            android:src="@drawable/ic_arrrow_down"
+            android:layout_marginStart="6dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"/>
+
+        <!-- Spacer -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+        <!-- Total PNL -->
+        <TextView
+            android:id="@+id/tvTotalPNL"
+            tools:text="@string/sample_total_pnl"
+            android:textSize="20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#D0021B" />
+
+    </LinearLayout>
+</LinearLayout>
